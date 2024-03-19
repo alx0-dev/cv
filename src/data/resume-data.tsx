@@ -142,16 +142,5 @@ export const RESUME_DATA = {
         href: "https://github.com/alx0-dev/node-weather-app",
       },
     },
-    {
-      title: "Entri",
-      techStack: ["Vite", "Vue", "Pinia"],
-      description:
-        "A web app where visitors can register before entering an office/establishment.",
-      logo: MonitoLogo,
-      link: {
-        label: "Entri",
-        href: "https://github.com/alx0-dev/entri-vue",
-      },
-    },
   ],
 } as const;
