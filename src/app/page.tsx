@@ -126,13 +126,16 @@ export default function Page() {
                       {work.start} - {work.end}
                     </div>
                   </div>
-
                   <h4 className="font-mono text-sm leading-none">
                     {work.title}
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {work.description.map((desc) => (
+                    <ul key={desc} className="list-disc space-y-1 pl-5">
+                      <li>{desc}</li>
+                    </ul>
+                  ))}
                 </CardContent>
               </Card>
             );
